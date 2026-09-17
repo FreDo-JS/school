@@ -1,0 +1,13 @@
+.offer-box
+{
+  border: 1px solid black;
+  padding: 5px 25px;
+  margin: 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.offer-box:hover{
+  box-shadow: 3px 3px 15px gray;
+  transform: translateY(-5px);
+}
