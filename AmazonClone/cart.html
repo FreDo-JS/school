@@ -18,8 +18,34 @@
     <main>
       <h1>Twoje zamówienie</h1>
       <hr />
+      <div class="takenItems"></div>
+      <a href="logIn.html" id="login-button">Złóż zamówienie</a>
     </main>
+    <script>
 
+      function showCart() {
+        const takenContainer = document.querySelector('.takenItems')
+        
+        let takenItems = JSON.parse(localStorage.getItem('cart')) || [] 
+
+        takenItems.forEach((take) =>
+      {
+        takenContainer.innerHTML +=
+        `
+        <div class='card-product'>
+          <img src=${take.img} />
+          <h1>${take.name}</h1>
+          <p>${take.price}</p>
+          </div>
+        `
+      })
+
+      }
+      showCart()
+
+
+
+    </script>
     <script src="app.js"></script>
   </body>
 </html>

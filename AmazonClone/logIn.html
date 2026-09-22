@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Amazon</h1>
+      
+     
+    </header>
+    <nav>
+      <a href="">Bestsellery</a>
+      <a href="">Okazje</a>
+      <a href="">Prime</a>
+      <a href="https://www.primevideo.com" target="_blank">Prime Video</a>
+      <a href="">Karty podarunkowe</a>
+      <a href="">Dział obsługi klienta</a>
+    </nav>
+    <main>
+     <div class="login-box">
+      <input type="email" placeholder="Wpisz email.." class="email-input">
+      <input type="password" placeholder="Wpisz hasło.." class="passowrd-input">
+      <button onclick="logIN()">Zaloguj</button>
+     </div>
+    </main>
+    <script>
+      function logIN() {
+        const emailInput = document.querySelector('.email-input').value
+        const passwordInput = document.querySelector('.passowrd-input').value
+
+        const email = 'teb@edu.pl'
+        const password = 'tebby2015!'
+
+        if(emailInput === email && passwordInput === password)
+      {
+        alert('Zalogwano')
+      }
+      else
+      {
+        alert('Błędne dane')
+      }
+
+        
+      }
+      
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -26,7 +26,7 @@ const products = [
 ];
 
 const container = document.querySelector(".product-container");
-console.log(products);
+// console.log(products);
 
 products.forEach((product) => {
   container.innerHTML += `
@@ -47,4 +47,10 @@ function addToCart(productId) {
   cart.push(product);
 
   localStorage.setItem("cart", JSON.stringify(cart));
+ 
 }
+
+
+
+
+
