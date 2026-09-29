@@ -1,22 +1,101 @@
-export function AddNewCar()
-{
-    return(<>
-        <form action="">
-        <input type="text" className="form-control" placeholder="Marka auta" />
-        <input type="text" className='form-control'placeholder="Podaj nazwe"/>
-        <input type="number" className='form-control' placeholder="Podaj kwote" />
-        <p>Rodzaj paliwa</p>
-        <select className="form-select form-select-sm mb-3" name="" id="">
-            <option value="" disabled selected>Wybierz</option>
-            <option value="Benzyna">Benzyna</option>
-            <option value="Diesel">Diesel</option>
-            <option value="Elektryk">Elektryk</option>
-        </select>
-        <p>Rok produkcji</p>
-        <input type="number"className='form-control' />
-        <br />
-        <input type="number" placeholder="Podaj przebieg" className='form-control' />
-        <button className="btn btn-success">Dodaj</button>
+import { useState } from "react";
+
+export function AddNewCar({carMarket, setCarMarket}) {
+    const [car, setCar] = useState({
+        marka: "",
+        nazwa: "",
+        kwota: "",
+        paliwo: "",
+        rok: "",
+        przebieg: ""
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+
+        setCar((prev) => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        console.log(car);
+
+       
+    };
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <input
+                type="text"
+                name="marka"
+                className="form-control"
+                placeholder="Marka auta"
+                value={car.marka}
+                onChange={handleChange}
+            />
+
+            <input
+                type="text"
+                name="nazwa"
+                className="form-control"
+                placeholder="Podaj nazwę"
+                value={car.nazwa}
+                onChange={handleChange}
+            />
+
+            <input
+                type="number"
+                name="kwota"
+                className="form-control"
+                placeholder="Podaj kwotę"
+                value={car.kwota}
+                onChange={handleChange}
+            />
+
+            <p>Rodzaj paliwa</p>
+
+            <select
+                name="paliwo"
+                className="form-select form-select-sm mb-3"
+                value={car.paliwo}
+                onChange={handleChange}
+            >
+                <option value="" disabled>
+                    Wybierz
+                </option>
+                <option value="Benzyna">Benzyna</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Elektryk">Elektryk</option>
+            </select>
+
+            <p>Rok produkcji</p>
+
+            <input
+                type="number"
+                name="rok"
+                className="form-control"
+                value={car.rok}
+                onChange={handleChange}
+            />
+
+            <br />
+
+            <input
+                type="number"
+                name="przebieg"
+                placeholder="Podaj przebieg"
+                className="form-control"
+                value={car.przebieg}
+                onChange={handleChange}
+            />
+
+            <button type="submit" className="btn btn-success">
+                Dodaj
+            </button>
         </form>
-    </>)
-}  
+    );
+}
