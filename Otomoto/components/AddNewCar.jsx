@@ -1,30 +1,16 @@
 import { useState } from "react";
 
 export function AddNewCar({carMarket, setCarMarket}) {
-    const [car, setCar] = useState({
-        marka: "",
-        nazwa: "",
-        kwota: "",
-        paliwo: "",
-        rok: "",
-        przebieg: ""
-    });
+  
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-
-        setCar((prev) => ({
-            ...prev,
-            [name]: value
-        }));
-    };
+    
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
         console.log(car);
-
-       
+        
+        
     };
 
     return (
@@ -34,8 +20,7 @@ export function AddNewCar({carMarket, setCarMarket}) {
                 name="marka"
                 className="form-control"
                 placeholder="Marka auta"
-                value={car.marka}
-                onChange={handleChange}
+               
             />
 
             <input
@@ -43,8 +28,7 @@ export function AddNewCar({carMarket, setCarMarket}) {
                 name="nazwa"
                 className="form-control"
                 placeholder="Podaj nazwę"
-                value={car.nazwa}
-                onChange={handleChange}
+              
             />
 
             <input
@@ -52,8 +36,7 @@ export function AddNewCar({carMarket, setCarMarket}) {
                 name="kwota"
                 className="form-control"
                 placeholder="Podaj kwotę"
-                value={car.kwota}
-                onChange={handleChange}
+               
             />
 
             <p>Rodzaj paliwa</p>
@@ -61,8 +44,7 @@ export function AddNewCar({carMarket, setCarMarket}) {
             <select
                 name="paliwo"
                 className="form-select form-select-sm mb-3"
-                value={car.paliwo}
-                onChange={handleChange}
+              
             >
                 <option value="" disabled>
                     Wybierz
@@ -78,8 +60,7 @@ export function AddNewCar({carMarket, setCarMarket}) {
                 type="number"
                 name="rok"
                 className="form-control"
-                value={car.rok}
-                onChange={handleChange}
+              
             />
 
             <br />
@@ -89,8 +70,7 @@ export function AddNewCar({carMarket, setCarMarket}) {
                 name="przebieg"
                 placeholder="Podaj przebieg"
                 className="form-control"
-                value={car.przebieg}
-                onChange={handleChange}
+               
             />
 
             <button type="submit" className="btn btn-success">
