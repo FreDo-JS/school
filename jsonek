@@ -1,0 +1,38 @@
+[
+  {
+  "tickets": [
+    {
+      "name": "BitterSweet Club",
+      "pool": 1,
+      "price": 688,
+      "currency": "PLN",
+      "status": "sold_out",
+      "normal_lub_ulga": "normal"
+    },
+    {
+      "name": "Sweet Start",
+      "pool": 2,
+      "price": 788,
+      "currency": "PLN",
+      "status": "sold_out",
+      "normal_lub_ulga": "normal"
+    },
+    {
+      "name": "Early Bird",
+      "pool": 3,
+      "price": 888,
+      "currency": "PLN",
+      "status": "available_soon",
+      "normal_lub_ulga": "normal"
+    },
+    {
+      "name": "Regular",
+      "pool": 4,
+      "price": 988,
+      "currency": "PLN",
+      "status": "available_soon",
+      "normal_lub_ulga": "normal"
+    }
+  ]
+}
+]
