@@ -1,0 +1,97 @@
+{
+  "categories": [
+    {
+      "title": "frontend",
+      "description": "BUILDING MODERN INTERFACES FOR THE WEB"
+    },
+    {
+      "title": "performance",
+      "description": "MAKE EVERY MILLISECOND COUNT"
+    },
+    {
+      "title": "accessibility",
+      "description": "BUILDING INCLUSIVE EXPERIENCES FOR EVERYONE"
+    },
+    {
+      "title": "tooling",
+      "description": "LEVEL UP YOUR DEVELOPER WORKFLOW"
+    }
+  ],
+  "sectionHeader": "// FEATURED_SPEAKERS",
+  "speakers": [
+    {
+      "name": "elena vasquez",
+      "role": "PRINCIPAL FRONTEND ENGINEER",
+      "company": "@BYTECRAFT",
+      "topic": "THE NEXT FRONTIER OF WEB DEVELOPMENT"
+    },
+    {
+      "name": "naomi tanaka",
+      "role": "ACCESSIBILITY ENGINEERING LEAD",
+      "company": "@AXION",
+      "topic": "SCREEN READERS DESERVE BETTER COMPONENTS"
+    },
+    {
+      "name": "james okonkwo",
+      "role": "ENGINEERING DIRECTOR",
+      "company": "@CARTWELL",
+      "topic": "MONOREPOS AT SCALE: LESSONS FROM 500 PACKAGES"
+    },
+    {
+      "name": "sarah lindström",
+      "role": "DESIGN SYSTEMS LEAD",
+      "company": "@TESSERA",
+      "topic": "TYPE-SAFE DESIGN TOKENS ACROSS PLATFORMS"
+    }
+  ],
+  "schedule": [
+    {
+      "category": "PERFORMANCE",
+      "title": "video compression for the web: the middle-out approach",
+      "speaker": {
+        "name": "DINESH CHUGTAI",
+        "company": "PIED PIPER"
+      },
+      "showDetails": "+ SHOW DETAILS",
+      "timeStart": "11:00",
+      "timeEnd": "12:00",
+      "day": "DAY 1"
+    },
+    {
+      "category": "FRONTEND",
+      "title": "css container queries in production",
+      "speaker": {
+        "name": "MEI-LIN ZHANG",
+        "company": "ROAMLY"
+      },
+      "showDetails": "+ SHOW DETAILS",
+      "timeStart": "13:00",
+      "timeEnd": "14:00",
+      "day": "DAY 1"
+    },
+    {
+      "category": "ACCESSIBILITY",
+      "title": "designing accessible audio experiences",
+      "speaker": {
+        "name": "FATIMA AL-RASHID",
+        "company": "SPECTRA"
+      },
+      "showDetails": "+ SHOW DETAILS",
+      "timeStart": "11:00",
+      "timeEnd": "12:00",
+      "day": "DAY 2"
+    },
+    {
+      "category": "TOOLING",
+      "title": "deploy preview environments that scale",
+      "speaker": {
+        "name": "TOM KOWALSKI",
+        "company": "NIMBUS"
+      },
+      "showDetails": "+ SHOW DETAILS",
+      "timeStart": "12:00",
+      "timeEnd": "13:00",
+      "day": "DAY 3"
+    }
+  ]
+}
